@@ -1,7 +1,7 @@
 fs = require('fs')
 fs.readFile('text.txt', function (err, data) {
   if (err) throw err
-  markov(data.toString().replace(/[\,\?\.\(\)\"\:\!\-\;]/g, ''))
+  markov(data.toString().replace(/[,?.()":!-;]/g, ''))
 })
 
 function markov(s){
