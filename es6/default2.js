@@ -1,0 +1,1 @@
+module.exports = (s, v=s.length) => `${s}${'!'.repeat(v)}`
