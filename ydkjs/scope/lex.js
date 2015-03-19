@@ -1,9 +1,15 @@
-var bar = function(){
-  var a = 5
-  function foo(x){
-    console.log(this)
-  }
-  foo(5)
+function foo(obj) {
+    with (obj) {
+        eval("a = 2")
+    }
 }
 
-bar()
+var o1 = {a: 3}
+var o2 = {b: 3}
+
+foo(o1)
+console.log( o1.a )
+
+foo(o2)
+console.log(o2.a)
+console.log(a)
