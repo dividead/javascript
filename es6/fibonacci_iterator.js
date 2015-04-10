@@ -5,10 +5,10 @@ function f(n){
     yield n1
     yield n2
     while(true){
-        let s = n2 + n1
-        n1 = n2
-        n2 = s
-        yield s
+      let s = n2 + n1
+      n1 = n2
+      n2 = s
+      yield s
     }
   }
   
