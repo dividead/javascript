@@ -1,4 +1,4 @@
-let lispMap = (f, ...a) => a.map((m,i)=>(a.map((n) => n[i]).reduce(f)))
+let lispMap = (f, ...a) => a.map((m,i) => (a.map((n) => n[i]).reduce(f)))
 
 lispMap((x,y)=>x+y, [1,2,3],[4,5,6],[7,8,9]) //[12,15,18]
 lispMap((x,y)=>x*y, [1,2,3],[4,5,6],[7,8,9]) //[28,80,162]
